@@ -1,6 +1,5 @@
 from qiskit import ClassicalRegister, QuantumCircuit, QuantumRegister
 from qiskit_aer import AerSimulator
-from collections import defaultdict
 
 def teleportation_circuit(bit):
     
