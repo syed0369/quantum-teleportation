@@ -42,16 +42,11 @@ def teleportation_circuit(bit):
     result = sim.run(circuit, shots=1000).result()
     counts = result.get_counts()
 
-    result = defaultdict(int)
+    result = {'0': 0, '1': 0}
+    for k, v in counts.items():
+        result[k[0]] += v
 
-    for key, value in counts.items():
-        first_bit = key[0]
-        result[first_bit] += value
-    
-    if result['0'] > result['1']:
-        return '0'
-    
-    return '1'
+    return max(result, key=result.get)
 
 
 if __name__ == "__main__":
