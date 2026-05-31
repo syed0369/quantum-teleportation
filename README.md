@@ -114,5 +114,5 @@ See `requirements.txt` for complete dependency list and versions.
 
 ## References
 
-- [Qiskit Quantum Teleportation](https://quantum.cloud.ibm.com/learning/en/modules/computer-science/quantum-teleportation)Bell_state)
+- [Qiskit Quantum Teleportation](https://quantum.cloud.ibm.com/learning/en/modules/computer-science/quantum-teleportation)(Bell_state)
 
